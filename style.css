@@ -19,7 +19,7 @@ p {
 }
 
 a,
-btn {
+.btn {
   transition: all 0.3s ease;
 }
 
@@ -54,6 +54,11 @@ a:hover {
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+  }
 
 .logo {
   font-size: 2rem;
@@ -145,31 +150,32 @@ a:hover {
 
 .arrow {
   position: absolute;
-  right: 47%;
   bottom: 2.5rem;
   height: 64px;
+  cursor: pointer;
 }
 
 /* sections */
 
 section {
   padding-top: 5vh;
-  height: 95vh;
+  height:100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  justify-content: center;
 }
 .section-container {
   display: flex;
+  justify-content: center;
 }
 
 /* profile */
 
 #profile {
   display: flex;
-  justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 83vh;
 }
 
 .section_img-container {
@@ -197,12 +203,9 @@ section {
   margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
 
-.socials-container {
+
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -346,7 +349,6 @@ article .icon {
 
 #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
