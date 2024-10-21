@@ -141,6 +141,15 @@ a:hover {
   opacity: 1;
 } */
 
+/* arrow */
+
+.arrow {
+  position: absolute;
+  right: 47%;
+  bottom: 2.5rem;
+  height: 64px;
+}
+
 /* sections */
 
 section {
@@ -252,13 +261,6 @@ section {
   display: flex;
 }
 
-.arrow {
-  position: absolute;
-  right: 47%;
-  bottom: 2.5rem;
-  height: 64px;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -269,7 +271,7 @@ section {
   text-align: center;
 }
 
-.section-container{
-    gap: 4rem;
-    height: 80%;
+.section-container {
+  gap: 4rem;
+  height: 80%;
 }
