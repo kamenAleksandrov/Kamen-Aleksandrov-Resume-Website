@@ -117,6 +117,8 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .hamburger-icon.open span:first-child {
