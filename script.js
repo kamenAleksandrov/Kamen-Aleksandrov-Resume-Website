@@ -26,3 +26,7 @@ function scrollToNextSection() {
     sections[currentSectionIndex + 1].scrollIntoView({ behavior: "smooth" });
   }
 }
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
