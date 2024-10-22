@@ -3,7 +3,7 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .containers {
     flex-wrap: wrap;
   }
   #contact,
@@ -20,7 +20,7 @@
     display: flex;
   }
   #experience,
-  .experience-details-container {
+  .group-container {
     margin-top: 2rem;
   }
   #profile,
@@ -42,7 +42,7 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
+  .containers {
     margin-top: 0;
   }
 }
@@ -63,8 +63,8 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
-  .contact-info-upper-container,
+  .containers,
+  .contact-info-group-container,
   .btn-container {
     flex-wrap: wrap;
   }
@@ -72,16 +72,16 @@
     margin: 0;
   }
   .contact-info-container p,
-  .nav-links li a {
+  .desktop-nav-links li a {
     font-size: 1rem;
   }
-  .experience-sub-title {
+  .sub-title {
     font-size: 1.25rem;
   }
   .logo {
     font-size: 1.5rem;
   }
-  .nav-links {
+  .desktop-nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;

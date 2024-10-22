@@ -12,7 +12,7 @@
     <!-- desktop navigation -->
     <nav id="desktop-nav">
       <div class="logo">Kamen Aleksandrov's Portfolio</div>
-      <ul class="nav-links">
+      <ul class="desktop-nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -24,14 +24,11 @@
       <div class="logo">Kamen Aleksandrov's Portfolio</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-          <!-- <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div> -->
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
-        <div class="menu-links">
+        <div class="mobile-nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -88,7 +85,7 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
-          <div class="about-containers">
+          <div class="containers">
             <div class="details-container">
               <img
                 src="data\emoji_people_64dp.png"
@@ -136,10 +133,10 @@
     <section id="experience" class="section">
       <p class="section_text_p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+      <div class="group-container">
+        <div class="containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">System administrator</h2>
+            <h2 class="sub-title">System administrator</h2>
             <div class="article-container">
               <article>
                 <img
@@ -177,7 +174,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">System administrator</h2>
+            <h2 class="sub-title">System administrator</h2>
             <div class="article-container">
               <article>
                 <img
@@ -228,8 +225,8 @@
     <section id="projects" class="section">
       <p class="section_text_p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+      <div class="group-container">
+        <div class="containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -238,7 +235,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title">Project 1</h2>
+            <h2 class="sub-title">Project 1</h2>
             <div class="btn-container">
               <button
                 class="btn project-btn"
@@ -262,7 +259,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title">Project 2</h2>
+            <h2 class="sub-title">Project 2</h2>
             <div class="btn-container">
               <button
                 class="btn project-btn"
@@ -286,7 +283,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title">Project 3</h2>
+            <h2 class="sub-title">Project 3</h2>
             <div class="btn-container">
               <button
                 class="btn project-btn"
@@ -312,17 +309,22 @@
         onclick="scrollToNextSection()"
       />
     </section>
+    <!-- contact section -->
     <section id="contact" class="section">
       <p class="section_text_p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <div class="contact-info-group-container">
         <div class="contact-info-container">
           <img
             src="data\mail_64dp.png"
             alt="Email icon"
-            class="icon contact-icon email-icon"
+            class="icon contact-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p>
+            <a href="mailto:kamenkaleksandrov@gmail.com"
+              >kamenkaleksandrov@gmail.com
+            </a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -350,7 +352,7 @@
     <footer>
       <nav>
         <div class="nav-link-container">
-          <ul class="nav-links">
+          <ul class="desktop-nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
