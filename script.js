@@ -59,10 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     body.classList.add("dark-mode");
-    themeIcon.src = "data/dark_mode_64dp.png";
+    themeIcon.src = "data/light_mode_64dp.png";
     themeIcon.alt = "Switch to Light Mode";
   } else {
-    themeIcon.src = "data/light_mode_64dp.png";
+    themeIcon.src = "data/dark_mode_64dp.png";
     themeIcon.alt = "Switch to Dark Mode";
   }
 });

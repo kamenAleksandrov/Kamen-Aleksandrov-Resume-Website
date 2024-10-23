@@ -452,6 +452,10 @@ body.dark-mode {
   text-decoration-color: #424242;
 }
 
+.dark-mode .logo {
+  color: #882323;
+}
+
 .dark-mode .title {
   color: #882323;
 }
