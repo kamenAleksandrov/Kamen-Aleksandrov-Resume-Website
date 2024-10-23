@@ -41,9 +41,11 @@ function toggleTheme() {
   if (body.classList.contains("dark-mode")) {
     themeIcon.src = "data/light_mode_64dp.png";
     themeIcon.alt = "Switch to Light Mode";
+    themeIcon.title = "Switch to Light Mode";
   } else {
     themeIcon.src = "data/dark_mode_64dp.png";
     themeIcon.alt = "Switch to Dark Mode";
+    themeIcon.title = "Switch to Dark Mode";
   }
 }
 
@@ -61,8 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.add("dark-mode");
     themeIcon.src = "data/light_mode_64dp.png";
     themeIcon.alt = "Switch to Light Mode";
+    themeIcon.title = "Switch to Light Mode";
   } else {
     themeIcon.src = "data/dark_mode_64dp.png";
     themeIcon.alt = "Switch to Dark Mode";
+    themeIcon.title = "Switch to Dark Mode";
   }
 });

@@ -251,14 +251,13 @@ a:hover {
 
 .toggle-theme-btn-image {
   height: 36px;
-  filter: invert(1);
 }
 
 .toggle-theme-btn {
   cursor: pointer;
   border-radius: 48px;
-  border: rgb(59, 59, 59) 2px solid;
-  background: rgb(59, 59, 59);
+  border: black 2px solid;
+  background: white;
 }
 
 /* sections */
@@ -432,11 +431,12 @@ body.dark-mode {
 }
 
 .dark-mode .toggle-theme-btn-image {
-  filter: invert(0);
+  filter: invert(1);
 }
 
 .dark-mode .toggle-theme-btn {
-  background: #a8a8a8;
+  border-color: white;
+  background: #121212;
 }
 
 .dark-mode p {
@@ -473,7 +473,7 @@ body.dark-mode {
 }
 
 .dark-mode .mobile-nav-links {
-  background-color: black;
+  background-color: #a0a0a0;
 }
 
 .dark-mode .mobile-nav-links a {
