@@ -29,30 +29,40 @@ function scrollToNextSection() {
 
 function toggleTheme() {
   const body = document.body;
-  const themeIcon = document.getElementById('toggle-theme-btn-image');
-
-  body.classList.toggle('dark-mode');
-
-  if (body.classList.contains('dark-mode')) {
-    themeIcon.src = 'data/light_mode_64dp.png';
-    themeIcon.alt = 'Switch to Light Mode';
+  let themeIcon = null;
+  if (window.innerWidth <= 1200) {
+    themeIcon = document.getElementById("theme-btn-image-mobile");
   } else {
-    themeIcon.src = 'data/dark_mode_64dp.png';
-    themeIcon.alt = 'Switch to Dark Mode';
+    themeIcon = document.getElementById("theme-btn-image-desktop");
+  }
+
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    themeIcon.src = "data/light_mode_64dp.png";
+    themeIcon.alt = "Switch to Light Mode";
+  } else {
+    themeIcon.src = "data/dark_mode_64dp.png";
+    themeIcon.alt = "Switch to Dark Mode";
   }
 }
 
 // Apply system preference for dark mode on page load
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
-  const themeIcon = document.getElementById('toggle-theme-btn-image');
-
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    body.classList.add('dark-mode');
-    themeIcon.src = 'data/dark_mode_64dp.png';
-    themeIcon.alt = 'Switch to Light Mode';
+  let themeIcon = null;
+  if (window.innerWidth <= 1200) {
+    themeIcon = document.getElementById("theme-btn-image-mobile");
   } else {
-    themeIcon.src = 'data/light_mode_64dp.png';
-    themeIcon.alt = 'Switch to Dark Mode';
+    themeIcon = document.getElementById("theme-btn-image-desktop");
+  }
+
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    body.classList.add("dark-mode");
+    themeIcon.src = "data/dark_mode_64dp.png";
+    themeIcon.alt = "Switch to Light Mode";
+  } else {
+    themeIcon.src = "data/light_mode_64dp.png";
+    themeIcon.alt = "Switch to Dark Mode";
   }
 });

@@ -249,15 +249,15 @@ a:hover {
   background: rgb(194, 194, 194);
 }
 
-#toggle-theme-btn-image {
+.toggle-theme-btn-image {
   height: 36px;
   filter: invert(1);
 }
 
-#toggle-theme-btn {
+.toggle-theme-btn {
   cursor: pointer;
-  border-radius: 2rem;
-  border: rgb(197, 197, 197) 0.1rem solid;
+  border-radius: 48px;
+  border: rgb(59, 59, 59) 2px solid;
   background: rgb(59, 59, 59);
 }
 
@@ -431,11 +431,11 @@ body.dark-mode {
   filter: invert(1);
 }
 
-.dark-mode #toggle-theme-btn-image {
+.dark-mode .toggle-theme-btn-image {
   filter: invert(0);
 }
 
-.dark-mode #toggle-theme-btn {
+.dark-mode .toggle-theme-btn {
   background: #a8a8a8;
 }
 
@@ -452,8 +452,16 @@ body.dark-mode {
   text-decoration-color: #424242;
 }
 
+.dark-mode .title {
+  color: #882323;
+}
+
+.dark-mode h3 {
+  color: #e93939;
+}
+
 .dark-mode .sub-title {
-  color: #666666;
+  color: #a0a0a0;
 }
 
 .dark-mode .hamburger-icon span {
@@ -502,7 +510,7 @@ body.dark-mode {
   background: #3a3a3a;
 }
 
-.arrow {
+.dark-mode .arrow {
   filter: invert(1);
 }
 
