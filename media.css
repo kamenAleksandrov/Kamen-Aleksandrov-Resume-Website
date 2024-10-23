@@ -101,3 +101,96 @@
     text-align: justify;
   }
 }
+
+/*  can't figure out how to use this with a function to change themes */
+/* Dark mode styles using prefers-color-scheme 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  .section {
+    background-color: #1e1e1e;
+  }
+
+  .icon, .project-img {
+    filter: invert(1);
+  }
+
+  #toggle-theme-btn {
+    width: 5rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: rgb(53, 53, 53);
+  }
+
+  #toggle-theme-btn-image {
+    filter: invert(1);
+  }
+
+  p {
+    color: #c0c0c0;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  a:hover {
+    color: #6d1b1b;
+    text-decoration-color: #424242;
+  }
+
+  .sub-title {
+    color: #666666;
+  }
+
+  .hamburger-icon span {
+    background-color: white;
+  }
+
+  .mobile-nav-links {
+    background-color: black;
+  }
+
+  .mobile-nav-links a {
+    color: white;
+  }
+
+  .mobile-nav-links.open {
+    border: #d9d9d9 0.1rem solid;
+  }
+
+  .details-container {
+    background: black;
+    border: #d9d9d9 0.1rem solid;
+    border-color: #f5f5f5;
+  }
+
+  .color-container {
+    border-color: #f5f5f5;
+    background: black;
+  }
+
+  .btn:hover {
+    background: rgb(230, 230, 230);
+    color: black;
+  }
+
+  .project-title {
+    color: white;
+  }
+
+  .project-btn {
+    color: white;
+    border-color: #f5f5f5;
+  }
+
+  .contact-info-group-container {
+    border: #d9d9d9 0.1rem solid;
+    border-color: #f5f5f5;
+    background: black;
+  }
+}
+*/

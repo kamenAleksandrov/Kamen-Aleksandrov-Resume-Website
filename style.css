@@ -1,99 +1,6 @@
-/*add here colors to have their hexes and later add them to the
- style of the page:
-
- titles #6d1b1b
- titles 2/text #424242
- subtitles #666666
- groups 1 #f5f5f5
- groups 2 #d9d9d9
-
- what is colored in the page: 
-
- */
-
-/* Dark mode styles */
-
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-/* .dark-mode .section {
-  background-color: #1e1e1e;
-} */
-
-/* very useful, it inverts colors, did not know it could do this */
-.dark-mode .icon {
-  filter: invert(1);
-}
-
-.dark-mode p {
-  color: #c0c0c0;
-}
-
-.dark-mode a {
-  color: #c0c0c0;
-}
-
-.dark-mode a:hover {
-  color: #6d1b1b;
-  text-decoration-color: #424242;
-}
-
-.dark-mode .sub-title {
-  color: #666666;
-}
-
-.dark-mode .hamburger-icon span {
-  background-color: white;
-}
-
-.dark-mode .mobile-nav-links {
-  background-color: black;
-}
-
-.dark-mode .mobile-nav-links a {
-  color: white;
-}
-
-.dark-mode .mobile-nav-links.open {
-  border: #d9d9d9 0.1rem solid;
-}
-
-.dark-mode .details-container {
-  background: black;
-  border: #d9d9d9 0.1rem solid;
-  border-color: #f5f5f5;
-}
-
-.dark-mode .color-container {
-  border-color: #f5f5f5;
-  background: black;
-}
-
-.dark-mode .btn:hover {
-  background: rgb(230, 230, 230);
-  color: black;
-}
-
-.dark-mode .project-title {
-  color: white;
-}
-
-.dark-mode .project-btn {
-  color: white;
-  border-color: #f5f5f5;
-}
-
-.dark-mode .contact-info-group-container {
-  border: #d9d9d9 0.1rem solid;
-  border-color: #f5f5f5;
-  background: black;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* global */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -102,6 +9,7 @@ body.dark-mode {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #424242;
 }
 
 html {
@@ -115,6 +23,10 @@ p {
 a,
 .btn {
   transition: all 0.3s ease;
+}
+
+h3{
+  color: #6d1b1b;
 }
 
 /* desktop nav */
@@ -152,16 +64,18 @@ a:hover {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #6d1b1b;
 }
 
 .sub-title {
-  color: rgb(85, 85, 85);
+  color: #666666;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
 .logo {
+  color: #6d1b1b;
   font-size: 2rem;
 }
 
@@ -324,7 +238,6 @@ a:hover {
 
 .btn {
   font-weight: 600;
-  transform: all 0.3s ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
@@ -333,8 +246,19 @@ a:hover {
 
 .btn:hover {
   cursor: pointer;
-  background: rgb(53, 53, 53);
-  color: white;
+  background: rgb(194, 194, 194);
+}
+
+#toggle-theme-btn-image {
+  height: 36px;
+  filter: invert(1);
+}
+
+#toggle-theme-btn {
+  cursor: pointer;
+  border-radius: 2rem;
+  border: rgb(197, 197, 197) 0.1rem solid;
+  background: rgb(59, 59, 59);
 }
 
 /* sections */
@@ -490,3 +414,107 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Dark mode styles */
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .btn {
+  background: #a8a8a8;
+}
+
+/* very useful, it inverts colors, did not know it could do this */
+.dark-mode .icon, .project-img {
+  filter: invert(1);
+}
+
+.dark-mode #toggle-theme-btn-image {
+  filter: invert(0);
+}
+
+.dark-mode #toggle-theme-btn {
+  background: #a8a8a8;
+}
+
+.dark-mode p {
+  color: #c0c0c0;
+}
+
+.dark-mode a {
+  color: #c0c0c0;
+}
+
+.dark-mode a:hover {
+  color: #6d1b1b;
+  text-decoration-color: #424242;
+}
+
+.dark-mode .sub-title {
+  color: #666666;
+}
+
+.dark-mode .hamburger-icon span {
+  background-color: white;
+}
+
+.dark-mode .mobile-nav-links {
+  background-color: black;
+}
+
+.dark-mode .mobile-nav-links a {
+  color: white;
+}
+
+.dark-mode .mobile-nav-links.open {
+  border: #d9d9d9 0.1rem solid;
+}
+
+.dark-mode .details-container {
+  background: #3a3a3a;
+  border: #d9d9d9 0.1rem solid;
+  border-color: #f5f5f5;
+}
+
+.dark-mode .color-container {
+  border-color: #f5f5f5;
+  background: #3a3a3a;
+}
+
+.dark-mode .btn:hover {
+  background: rgb(230, 230, 230);
+  color: black;
+}
+
+.dark-mode .project-title {
+  color: white;
+}
+
+.dark-mode .project-btn {
+  border-color: #f5f5f5;
+}
+
+.dark-mode .contact-info-group-container {
+  border: #d9d9d9 0.1rem solid;
+  border-color: #f5f5f5;
+  background: #3a3a3a;
+}
+
+.arrow {
+  filter: invert(1);
+}
+
+/*add here colors to have their hexes and later add them to the
+ style of the page:
+
+ titles #6d1b1b
+ titles 2/text #424242
+ subtitles #666666
+ groups 1 #f5f5f5
+ groups 2 #d9d9d9
+
+ what is colored in the page: 
+
+ */

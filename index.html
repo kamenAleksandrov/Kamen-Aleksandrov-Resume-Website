@@ -12,9 +12,11 @@
     <!-- desktop navigation -->
     <nav id="desktop-nav">
       <div class="logo">Kamen Aleksandrov's Portfolio</div>
-      <!-- Add this button somewhere in your HTML, e.g., in the header or footer -->
-      <button id="dark-mode-toggle" onclick="toggleDarkMode()">
-        Toggle Dark Mode
+      <button id="toggle-theme-btn" onclick="toggleTheme()">
+        <img id="toggle-theme-btn-image"
+          src="data\dark_mode_64dp.png"
+          alt="Toggle Theme"
+        />
       </button>
       <ul class="desktop-nav-links">
         <li><a href="#about">About</a></li>
@@ -26,6 +28,12 @@
     <!-- mobile navigation -->
     <nav id="mobile-nav">
       <div class="logo">Kamen Aleksandrov's Portfolio</div>
+      <button id="toggle-theme-btn" onclick="toggleTheme()">
+        <img id="toggle-theme-btn-image"
+          src="data\dark_mode_64dp.png"
+          alt="Toggle Theme"
+        />
+      </button>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span class="line"></span>

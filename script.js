@@ -27,6 +27,32 @@ function scrollToNextSection() {
   }
 }
 
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
+function toggleTheme() {
+  const body = document.body;
+  const themeIcon = document.getElementById('toggle-theme-btn-image');
+
+  body.classList.toggle('dark-mode');
+
+  if (body.classList.contains('dark-mode')) {
+    themeIcon.src = 'data/light_mode_64dp.png';
+    themeIcon.alt = 'Switch to Light Mode';
+  } else {
+    themeIcon.src = 'data/dark_mode_64dp.png';
+    themeIcon.alt = 'Switch to Dark Mode';
+  }
 }
+
+// Apply system preference for dark mode on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.body;
+  const themeIcon = document.getElementById('toggle-theme-btn-image');
+
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    themeIcon.src = 'data/dark_mode_64dp.png';
+    themeIcon.alt = 'Switch to Light Mode';
+  } else {
+    themeIcon.src = 'data/light_mode_64dp.png';
+    themeIcon.alt = 'Switch to Dark Mode';
+  }
+});
