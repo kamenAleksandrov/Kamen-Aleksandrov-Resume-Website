@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* global */
+/*----------------------------------- GLOBAL ---------------------------------- */
 
 * {
   margin: 0;
@@ -20,17 +20,17 @@ p {
   color: rgb(85, 85, 85);
 }
 
-a,
-.btn {
+a {
   transition: all 0.3s ease;
 }
 
-h3{
+h3 {
   color: #6d1b1b;
 }
 
-/* desktop nav */
+/*--------------------------------- NAVIGATION -------------------------------- */
 
+/* desktop nav */
 nav,
 .desktop-nav-links {
   display: flex;
@@ -55,7 +55,7 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: #6d1b1b;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -77,6 +77,7 @@ a:hover {
 .logo {
   color: #6d1b1b;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .logo:hover {
@@ -92,22 +93,6 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 3px;
-  background-color: black;
-  transition: all 0.3s ease-in-out;
 }
 
 .mobile-nav-links {
@@ -141,19 +126,7 @@ a:hover {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-/* arrow */
+/* nav arrow */
 
 .arrow {
   position: absolute;
@@ -164,6 +137,8 @@ a:hover {
   cursor: pointer;
   animation: bounce 3s 2;
 }
+
+/*-----------------------------= ANIMATIONS ------------------------------------*/
 
 /* Keyframes for bounce animation */
 @keyframes bounce {
@@ -182,7 +157,20 @@ a:hover {
   }
 }
 
-/* containers */
+/* fade in animation */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*------------------------------- CONTAINERS -----------------------------------*/
 
 .containers {
   gap: 2rem;
@@ -199,6 +187,9 @@ a:hover {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  border-width: 0;
 }
 
 .article-container {
@@ -221,27 +212,118 @@ a:hover {
   background: rgb(250, 250, 250);
 }
 
-/* icons */
-
-.icon {
-  cursor: default;
-  height: 2rem;
-}
-
-/* buttons */
-
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+
+.section_img-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.contact-info-group-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  border-width: 0;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+/*---------------------------------- ICONS -------------------------------------*/
+
+.icon {
+  cursor: default;
+  height: 2rem;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+/*---------------------------------- BUTTONS -----------------------------------*/
+
 .btn {
   font-weight: 600;
   padding: 1rem;
   width: 8rem;
+  transition: all 0.3s ease;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  border-width: 0;
 }
 
 .btn:hover {
@@ -249,6 +331,41 @@ a:hover {
   background: rgb(194, 194, 194);
 }
 
+.project-btn {
+  align-items: center;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+  transition: box-shadow 0.15s, transform 0.15s;
+  font-size: 18px;
+}
+
+.project-btn:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.project-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.project-btn:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* dark mode button */
 .toggle-theme-btn-image {
   height: 36px;
 }
@@ -256,11 +373,16 @@ a:hover {
 .toggle-theme-btn {
   cursor: pointer;
   border-radius: 48px;
-  border: black 2px solid;
+  border: none;
   background: white;
+  transition: all 0.3s ease;
 }
 
-/* sections */
+.toggle-theme-btn:hover {
+  background: rgb(194, 194, 194);
+}
+
+/*--------------------------------- SECTIONS -----------------------------------*/
 
 section {
   padding-top: 5vh;
@@ -271,24 +393,12 @@ section {
   justify-content: center;
 }
 
-.section-container {
-  display: flex;
-  justify-content: center;
-}
-
 /* profile */
 
 #profile {
   display: flex;
   gap: 5rem;
   height: 83vh;
-}
-
-.section_img-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 .section_text {
@@ -309,28 +419,10 @@ section {
   margin-bottom: 1rem;
 }
 
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
 /* about */
 
 #about {
   position: relative;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
 }
 
 /* experience */
@@ -363,44 +455,12 @@ article {
   color: black;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
 /* contact */
 
 #contact {
   display: flex;
   flex-direction: column;
   height: 80vh;
-}
-
-.contact-info-group-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
 }
 
 /* footer */
@@ -414,7 +474,7 @@ footer p {
   text-align: center;
 }
 
-/* Dark mode styles */
+/*------------------------------- DARK MODE ------------------------------------*/
 
 body.dark-mode {
   background-color: #121212;
@@ -426,23 +486,19 @@ body.dark-mode {
 }
 
 /* very useful, it inverts colors, did not know it could do this */
-.dark-mode .icon, .project-img {
-  filter: invert(1);
-}
-
-.dark-mode .toggle-theme-btn-image {
+.dark-mode .icon,
+.dark-mode .project-img,
+.dark-mode .toggle-theme-btn-image,
+.dark-mode .arrow {
   filter: invert(1);
 }
 
 .dark-mode .toggle-theme-btn {
-  border-color: white;
+  border-color: #c0c0c0;
   background: #121212;
 }
 
-.dark-mode p {
-  color: #c0c0c0;
-}
-
+.dark-mode p,
 .dark-mode a {
   color: #c0c0c0;
 }
@@ -452,10 +508,7 @@ body.dark-mode {
   text-decoration-color: #424242;
 }
 
-.dark-mode .logo {
-  color: #882323;
-}
-
+.dark-mode .logo,
 .dark-mode .title {
   color: #882323;
 }
@@ -476,7 +529,8 @@ body.dark-mode {
   background-color: #a0a0a0;
 }
 
-.dark-mode .mobile-nav-links a {
+.dark-mode .mobile-nav-links a,
+.dark-mode .project-title {
   color: white;
 }
 
@@ -484,15 +538,13 @@ body.dark-mode {
   border: #d9d9d9 0.1rem solid;
 }
 
-.dark-mode .details-container {
-  background: #3a3a3a;
-  border: #d9d9d9 0.1rem solid;
-  border-color: #f5f5f5;
-}
-
+.dark-mode .details-container,
+.dark-mode .contact-info-group-container,
 .dark-mode .color-container {
-  border-color: #f5f5f5;
   background: #3a3a3a;
+  border: #424242 0.1rem solid;
+  box-shadow: rgba(73, 73, 73, 0.103) 0 2px 4px,
+    rgb(100, 100, 100) 0 7px 13px -3px, #72727217 0 -3px 0 inset;
 }
 
 .dark-mode .btn:hover {
@@ -500,22 +552,8 @@ body.dark-mode {
   color: black;
 }
 
-.dark-mode .project-title {
-  color: white;
-}
-
 .dark-mode .project-btn {
   border-color: #f5f5f5;
-}
-
-.dark-mode .contact-info-group-container {
-  border: #d9d9d9 0.1rem solid;
-  border-color: #f5f5f5;
-  background: #3a3a3a;
-}
-
-.dark-mode .arrow {
-  filter: invert(1);
 }
 
 /*add here colors to have their hexes and later add them to the
