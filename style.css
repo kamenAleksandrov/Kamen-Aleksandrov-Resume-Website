@@ -368,18 +368,21 @@ a:hover {
 /* dark mode button */
 .toggle-theme-btn-image {
   height: 36px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.toggle-theme-btn-image:hover {
+  transition: all 0.3s ease;
+  filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 0.5));
+  transform: translateX(-5%) translateY(-5%);
 }
 
 .toggle-theme-btn {
   cursor: pointer;
-  border-radius: 48px;
+  border-radius: 2rem;
   border: none;
   background: white;
   transition: all 0.3s ease;
-}
-
-.toggle-theme-btn:hover {
-  background: rgb(194, 194, 194);
 }
 
 /*--------------------------------- SECTIONS -----------------------------------*/
@@ -488,7 +491,6 @@ body.dark-mode {
 /* very useful, it inverts colors, did not know it could do this */
 .dark-mode .icon,
 .dark-mode .project-img,
-.dark-mode .toggle-theme-btn-image,
 .dark-mode .arrow {
   filter: invert(1);
 }
@@ -498,13 +500,22 @@ body.dark-mode {
   background: #121212;
 }
 
+.dark-mode .toggle-theme-btn-image {
+  filter: invert(1) drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.5));
+}
+
+.dark-mode .toggle-theme-btn-image:hover {
+  filter: invert(1) drop-shadow(10px 15px 10px rgba(255, 255, 255, 0.5));
+  transform: translateX(-5%) translateY(-5%);
+}
+
 .dark-mode p,
 .dark-mode a {
   color: #c0c0c0;
 }
 
 .dark-mode a:hover {
-  color: #6d1b1b;
+  color: #e93939;
   text-decoration-color: #424242;
 }
 
