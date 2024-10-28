@@ -428,6 +428,17 @@ section {
   position: relative;
 }
 
+.paragraph-subtitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.spaced-paragraph {
+  margin-bottom: 15px;
+}
+
 /* experience */
 
 #experience {
