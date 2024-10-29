@@ -443,13 +443,38 @@ section {
 
 #experience {
   position: relative;
+  margin: 0%;
 }
 
 article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
-  gap: 0, 5rem;
+}
+
+/* hybrid scroll */
+
+.scroll_container {
+  height: 190vh;
+}
+
+.sticky_wrap {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.horizontal_scroll {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  transform: translate3d(20vw, 0px, 0px);
+  margin-left: 10rem;
 }
 
 /* projects */

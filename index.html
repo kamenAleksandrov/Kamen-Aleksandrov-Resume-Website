@@ -117,24 +117,24 @@
               />
               <h3 class="spaced-paragraph">About me</h3>
               <p class="spaced-paragraph">
-                <b>Personality</b> <br />I am curious and I like learning new things.
-                I'm communicative and fit well in a team. If possible I will
-                make a joke or two to lighten the mood.
+                <b>Personality</b> <br />I am curious and I like learning new
+                things. I'm communicative and fit well in a team. If possible I
+                will make a joke or two to lighten the mood.
               </p>
               <p class="spaced-paragraph">
                 <b>Hobbies</b><br />Astrophotography and delving deep into
                 fantasy/si-fi lore.
               </p>
               <p class="spaced-paragraph">
-                <b>Free time</b><br />I like going out on hikes and sightseeing. If
-                i'm unable to, I go to the gym. I play board games such as D&D
-                and exploding kittens. I like playing video games. I like
+                <b>Free time</b><br />I like going out on hikes and sightseeing.
+                If i'm unable to, I go to the gym. I play board games such as
+                D&D and exploding kittens. I like playing video games. I like
                 reading/watching videos on tech, science, finance, economics and
                 politics.
               </p>
               <p class="spaced-paragraph">
-                <b>Favorite quote</b><br />5 hours debugging can save me 5 minutes
-                reading documentation
+                <b>Favorite quote</b><br />5 hours debugging can save me 5
+                minutes reading documentation
               </p>
             </div>
             <div class="details-container">
@@ -174,138 +174,249 @@
         src="data\keyboard_double_arrow_down_64dp.png"
         alt="Arrow icon"
         class="arrow"
-        onclick="scrollToNextSection()"
+        onclick="location.href='#experience'"
       />
     </section>
     <!-- experience section -->
-    <section id="experience" class="section horizontal-scroll-section">
+    <section id="experience">
       <p class="section_text_p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="group-container fade-in">
-        <div class="containers scroll-container">
-          <div class="details-container">
-            <h2 class="sub-title">Front End</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>
-                    Build more than a few websites using HTML. I have a good
-                    understanding of the language and I am always looking to
-                    improve my skills.
-                  </p>
+      <!-- hybrid scroll -->
+      <div id="target-element" class="scroll_container">
+        <div class="sticky_wrap">
+          <div id="reference-element" class="horizontal_scroll">
+            <!-- rest of section -->
+            <div class="group-container fade-in">
+              <div class="containers">
+                <div class="details-container">
+                  <h2 class="sub-title">Front End</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>
+                          Build more than a few websites using HTML. I have a
+                          good understanding of the language and I am always
+                          looking to improve my skills.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>
+                          Same as HTML. I aim to create simple yet good looking
+                          websites with designs that are easy to navigate. I
+                          often use keyframes to make the website more
+                          interactive.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Next Up</h3>
+                        <p>
+                          Interested in Three.js and learning React or Angular.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>
-                    Same as HTML. I aim to create simple yet good looking
-                    websites with designs that are easy to navigate. I often use
-                    keyframes to make the website more interactive.
-                  </p>
+                <div class="details-container">
+                  <h2 class="sub-title">Back End</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>C#</h3>
+                        <p>
+                          Used for a few beginner projects, for backend on a
+                          Razor Pages website. Studied in University and still
+                          ongoing online courses.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Java</h3>
+                        <p>
+                          Studied in university and build could of projects on
+                          it. Have one mobile app that's a character creator for
+                          D&D. Soon starting on a university project using
+                          Spring Framework with Rest API.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>C++</h3>
+                        <p>
+                          Basic understanding of it's principles, a few test
+                          programs aimed at understanding the functionalities of
+                          the language.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>JavaScript</h3>
+                        <p>
+                          Build more than a few websites both in my university
+                          courses and in my spare time. Used mainly vanilla JS +
+                          Node.js. Currently taking online courses to further my
+                          skills.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Python</h3>
+                        <p>
+                          Used Python to work on Big data and summarize
+                          information and extract information.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Next Up</h3>
-                  <p>Interested in Three.js and learning React or Angular.</p>
+                <div class="details-container">
+                  <h2 class="sub-title">Front End</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>
+                          Build more than a few websites using HTML. I have a
+                          good understanding of the language and I am always
+                          looking to improve my skills.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>
+                          Same as HTML. I aim to create simple yet good looking
+                          websites with designs that are easy to navigate. I
+                          often use keyframes to make the website more
+                          interactive.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Next Up</h3>
+                        <p>
+                          Interested in Three.js and learning React or Angular.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="sub-title">Back End</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>
-                    Used for a few beginner projects, for backend on a Razor
-                    Pages website. Studied in University and still ongoing
-                    online courses.
-                  </p>
+                <div class="details-container">
+                  <h2 class="sub-title">Front End</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>
+                          Build more than a few websites using HTML. I have a
+                          good understanding of the language and I am always
+                          looking to improve my skills.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>
+                          Same as HTML. I aim to create simple yet good looking
+                          websites with designs that are easy to navigate. I
+                          often use keyframes to make the website more
+                          interactive.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="data\terminal_64dp.png"
+                        alt="Code icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Next Up</h3>
+                        <p>
+                          Interested in Three.js and learning React or Angular.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>
-                    Studied in university and build could of projects on it.
-                    Have one mobile app that's a character creator for D&D. Soon
-                    starting on a university project using Spring Framework with
-                    Rest API.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>
-                    Basic understanding of it's principles, a few test programs
-                    aimed at understanding the functionalities of the language.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>
-                    Build more than a few websites both in my university courses
-                    and in my spare time. Used mainly vanilla JS + Node.js.
-                    Currently taking online courses to further my skills.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="data\terminal_64dp.png"
-                  alt="Code icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>
-                    Used Python to work on Big data and summarize information
-                    and extract information.
-                  </p>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>
@@ -315,7 +426,7 @@
         src="data\keyboard_double_arrow_down_64dp.png"
         alt="Arrow icon"
         class="arrow"
-        onclick="scrollToNextSection()"
+        onclick="location.href='#projects'"
       />
     </section>
     <!-- projects section -->

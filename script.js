@@ -72,26 +72,71 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Fade in animation
-document.addEventListener("DOMContentLoaded", function() {
-  const faders = document.querySelectorAll('.fade-in');
+document.addEventListener("DOMContentLoaded", function () {
+  const faders = document.querySelectorAll(".fade-in");
 
   const appearOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -100px 0px"
+    threshold: 0.1,
+    rootMargin: "0px 0px -100px 0px",
   };
 
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-      entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-              return;
-          } else {
-              entry.target.classList.add('fade-in-visible');
-              appearOnScroll.unobserve(entry.target);
-          }
-      });
-  }, appearOptions);
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add("fade-in-visible");
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  },
+  appearOptions);
 
-  faders.forEach(fader => {
-      appearOnScroll.observe(fader);
+  faders.forEach((fader) => {
+    appearOnScroll.observe(fader);
   });
 });
+
+// Hybrid scroll
+const stickySections = [...document.querySelectorAll('.scroll_container')]
+
+window.addEventListener('scroll', (e) => {
+  for(let i = 0; i < stickySections.length; i++){
+    transform(stickySections[i])
+  }
+})
+
+function transform(section) {
+
+  const offsetTop = section.parentElement.offsetTop;
+
+  const scrollSection = section.querySelector('.horizontal_scroll')
+
+  percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+
+  percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
+
+  scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
+}
+
+// Set height of the horizontal scroll container
+
+/*
+// JavaScript
+function matchHeightToWidth() {
+  // Get the reference element's width
+  const referenceElement = document.getElementById('reference-element');
+  const referenceWidth = referenceElement.offsetWidth;
+
+  // Set the target element's height
+  const targetElement = document.getElementById('target-element');
+  targetElement.style.height = referenceWidth + 'px';
+}
+
+// Call the function on window load and resize
+window.addEventListener('load', matchHeightToWidth);
+window.addEventListener('resize', matchHeightToWidth);
+*/
