@@ -110,16 +110,15 @@ window.addEventListener('scroll', (e) => {
 })
 
 function transform(section) {
+  if (window.innerWidth > 1200) {
+    const offsetTop = section.parentElement.offsetTop;
+    const scrollSection = section.querySelector('.horizontal_scroll');
 
-  const offsetTop = section.parentElement.offsetTop;
+    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+    percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
 
-  const scrollSection = section.querySelector('.horizontal_scroll')
-
-  percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-
-  percentage = percentage < 0 ? 0 : percentage > 300 ? 300 : percentage;
-
-  scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
+    scrollSection.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`;
+  }
 }
 
 // Set height of the horizontal scroll container
@@ -140,3 +139,36 @@ function matchHeightToWidth() {
 window.addEventListener('load', matchHeightToWidth);
 window.addEventListener('resize', matchHeightToWidth);
 */
+
+// remove hybrid scroll on mobile
+function removeContentOnMobile() {
+  if (window.innerWidth <= 1200) {
+    const scroll_containers = document.querySelectorAll('.scroll_container');
+    const sticky_wraps = document.querySelectorAll('.sticky_wrap');
+    const horizontal_scrolls = document.querySelectorAll('.horizontal_scroll');
+    
+    scroll_containers.forEach(container => {
+      while (container.firstChild) {
+        container.parentNode.insertBefore(container.firstChild, container);
+      }
+      container.parentNode.removeChild(container);
+    });
+
+    sticky_wraps.forEach(wrap => {
+      while (wrap.firstChild) {
+        wrap.parentNode.insertBefore(wrap.firstChild, wrap);
+      }
+      wrap.parentNode.removeChild(wrap);
+    });
+
+    horizontal_scrolls.forEach(scroll => {
+      while (scroll.firstChild) {
+        scroll.parentNode.insertBefore(scroll.firstChild, scroll);
+      }
+      scroll.parentNode.removeChild(scroll);
+    });
+  }
+}
+
+window.addEventListener('load', removeContentOnMobile);
+window.addEventListener('resize', removeContentOnMobile);
