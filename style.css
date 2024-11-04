@@ -225,7 +225,7 @@ a:hover {
 
 .section_img-container {
   display: flex;
-  height: 400px;
+  height: 500px;
   width: 400px;
   margin: auto 0;
 }
@@ -271,6 +271,14 @@ a:hover {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+#profile-img {
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  border-width: 0;
 }
 
 /*---------------------------------- ICONS -------------------------------------*/
@@ -455,7 +463,7 @@ article {
 /* hybrid scroll */
 
 .scroll_container {
-  height: 190vh;
+  height: 160vh;
 }
 
 .sticky_wrap {
@@ -587,7 +595,8 @@ body.dark-mode {
 
 .dark-mode .details-container,
 .dark-mode .contact-info-group-container,
-.dark-mode .color-container {
+.dark-mode .color-container
+.dark-mode #profile-img {
   background: #3a3a3a;
   border: #424242 0.1rem solid;
   box-shadow: rgba(73, 73, 73, 0.103) 0 2px 4px,

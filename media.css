@@ -24,9 +24,16 @@
   .group-container {
     margin-top: 2rem;
   }
+  #experience {
+    margin: 0 5%;
+  }
   #profile,
   .section-container {
     display: block;
+  }
+  #profile-img {
+    width: 90vw;
+    height: 50vh;
   }
   .arrow {
     display: none;
