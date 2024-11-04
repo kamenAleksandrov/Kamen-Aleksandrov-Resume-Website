@@ -181,6 +181,7 @@ a:hover {
 
 .details-container {
   padding: 1.5rem;
+  max-width: 620px;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -198,6 +199,11 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
+}
+
+.article-text-container {
+  display: flex;
+  width: fit-content;
   justify-content: space-around;
 }
 
@@ -228,6 +234,15 @@ a:hover {
   height: 500px;
   width: 400px;
   margin: auto 0;
+}
+
+.project-image-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
 }
 
 #socials-container {
@@ -452,12 +467,6 @@ section {
 #experience {
   position: relative;
   margin: 0%;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
 }
 
 /* hybrid scroll */
