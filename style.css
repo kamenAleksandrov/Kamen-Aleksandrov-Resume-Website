@@ -177,6 +177,7 @@ a:hover {
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 .details-container {
@@ -191,6 +192,11 @@ a:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   border-width: 0;
+}
+
+.text-container{
+  text-align: justify;
+  max-width: 70vw;
 }
 
 .article-container {
@@ -332,7 +338,7 @@ a:hover {
 }
 
 .contact-icon {
-  cursor: default;
+  cursor: pointer;
 }
 
 /*---------------------------------- BUTTONS -----------------------------------*/
