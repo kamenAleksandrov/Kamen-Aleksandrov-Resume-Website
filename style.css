@@ -464,8 +464,14 @@ section {
   margin-bottom: 10px;
 }
 
+.centered-heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .spaced-paragraph {
   margin-bottom: 15px;
+  text-align: initial;
 }
 
 /* experience */
@@ -478,7 +484,7 @@ section {
 /* hybrid scroll */
 
 .scroll_container {
-  height: 160vh;
+  height: 270vh;
 }
 
 .sticky_wrap {
